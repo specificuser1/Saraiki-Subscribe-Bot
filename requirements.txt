@@ -1,2 +1,5 @@
-py-cord==2.4.1
+discord.py
 python-dotenv
+aiohttp
+request
+PyNaCl
