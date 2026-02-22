@@ -34,11 +34,10 @@ async def on_ready():
   
     stream = discord.Streaming(
         name="@SARAIKI PLAYS-S",
-        url=YT_LINK,  # Yeh link zaroor dena hota hai
-        platform="You Tube"  # Optional
+        url="https://youtube.com/@saraikiplays-s",  # Yeh link zaroor dena hota ha
     )
 
-    await bot.change_presence(status=discord.Status.dnd, activity=stream)
+    await bot.change_presence(status=discord.Status.online, activity=stream)
 
 # ----------------------------------------------------------
 #  MESSAGE LISTENER FOR SS CHANNEL
@@ -77,7 +76,7 @@ async def on_message(message: discord.Message):
         # Send Beautiful Thank You Message
         embed = discord.Embed(
             title="😘 Thanks For Subscribing!",
-            description=f"{message.author.mention}\nYou received {role.mention}.\n**Love You Ho Gaya Mari Jaan**\n\n**Apni Profile Check Kr Loo!**",
+            description=f"{message.author.mention}\nYou received {role.mention}.\n**Love You Ho Gaya Mari Jaan.**\n\n**Apni Profile Check Kr Loo!**",
             color=discord.Color.red()
         )
         embed.set_thumbnail(url=message.author.avatar.url)
